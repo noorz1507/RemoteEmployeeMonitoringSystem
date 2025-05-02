@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Monitoring System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Employee Monitoring</h1>
+      <button class="login-btn">Login</button>
+    </div>
+  </nav>
+
+  <main class="container dashboard">
+
+    <!-- Time Tracking Section -->
+    <section class="time-tracking">
+      <h2>Real-Time Employee Tracking</h2>
+      <button id="startBtn">Start Work</button>
+      <button id="stopBtn" disabled>Stop Work</button>
+      <p id="workTime">Total Time: 00:00:00</p>
+    </section>
+
+    <!-- Task Tracking Section -->
+    <section class="task-tracking">
+      <h3>Task Tracking</h3>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Task Name" required>
+        <input type="date" id="taskDeadline" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <div id="taskList"></div>
+    </section>
+
+    <!-- Employee Performance Report -->
+    <section class="productivity">
+      <h3>Productivity Report</h3>
+      <button id="generateReportBtn">Generate Report</button>
+      <div id="reportArea"></div>
+    </section>
+
+    <!-- Attendance & Leave Management -->
+    <section class="attendance">
+      <h3>Attendance & Leave</h3>
+      <button id="clockInBtn">Clock In</button>
+      <button id="clockOutBtn" disabled>Clock Out</button>
+      <div id="attendanceStatus">Status: Not Clocked In</div>
+    </section>
+
+    <!-- Team Collaboration -->
+    <section class="collaboration">
+      <h3>Team Collaboration</h3>
+      <button id="openChatBtn">Open Chat</button>
+      <button id="openVideoBtn">Start Video Call</button>
+    </section>
+  </main>
+
+  <script src="func.js"></script>
+</body>
+</html>
