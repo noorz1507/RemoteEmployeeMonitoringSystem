@@ -23,4 +23,14 @@ A simple and modern web-based solution for tracking employee time, tasks, produc
 ```bash
 git clone https://github.com/noorz1507/RemoteEmployeeMonitoringSystem.git
 cd RemoteEmployeeMonitoringSystem
+
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+git add .
+git commit -m "chore: readme update"
+git push
+python manage.py runserver
 ```
